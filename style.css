@@ -75,6 +75,47 @@ body {
 }
 
 
+/* video */
+
+.video__footage__container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video__footage {
+    position: relative;
+}
+
+.video__footage::before {
+    content: "";
+    background: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(.5rem, .5rem);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.chef__video {
+    width: 100%;
+    height: 100%;
+}
+
+.video__footage__text {
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
 /*Menu*/
 
 .food__menu__card {
@@ -307,6 +348,9 @@ footer>ul>li {
     .hero__image__patter2 {
         display: block;
     }
+    .video__footage__container {
+        margin-top: 120px;
+    }
     /*Menu*/
     .explore__menu__container {
         margin-top: 120px;
@@ -419,6 +463,9 @@ footer>ul>li {
     .hero__text {
         font-size: 45px;
     }
+    .video__footage__container {
+        margin-top: 130px;
+    }
     /*menu*/
     .explore__menu__container {
         margin-top: 160px;
@@ -464,6 +511,9 @@ footer>ul>li {
     footer>ul>li {
         /*margin: 8px;*/
         font-size: 17px;
+    }
+    .video__footage__container {
+        margin-top: 130px;
     }
 }
 
